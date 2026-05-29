@@ -10,7 +10,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: "https://testing-kappa-inky.vercel.app",
+    origin: config.cors.origin,
     credentials: true,
   })
 );
